@@ -18,4 +18,7 @@ setup(
         "mysk_utils.schema.subject",
         "mysk_utils.schema.vaccine",
     ],
+    install_requires=[
+        "pydantic>=1.9.0",
+    ],
 )
