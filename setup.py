@@ -7,5 +7,5 @@ setup(
     author="Suankularb Wittayalai School",
     author_email="skvc@sk.ac.th",
     url="https://github.com/suankularb-wittayalai-school",
-    packages=["mysk_utils"],
-) 
+    packages=["mysk_utils", "mysk_utils.schema"],
+)
