@@ -12,21 +12,20 @@ class SubjectTypesTH(str, Enum):
     """
 
     core = "รายวิชาพื้นฐาน"
-    elective = "วิชาเลือก"
-    additional = "วิชาเพิ่มเติม"
+    elective = "รายวิชาเลือก"
+    additional = "รายวิชาเพิ่มเติม"
     development = "กิจกรรมพัฒนาผู้เรียน"
 
 
-# I named this myself so idk if it is official
 class SubjectTypesEN(str, Enum):
     """
     SubjectTypes
     """
 
-    core = "Core"
-    elective = "Elective"
-    additional = "Additional"
-    development = "Activity and Development"
+    core = "Core Courses"
+    elective = "Elective Courses"
+    additional = "Additional Courses"
+    development = "Learner's Development Activities"
 
 
 class Subject(BaseModel):
