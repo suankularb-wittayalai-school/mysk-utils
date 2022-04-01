@@ -25,7 +25,7 @@ class EnglishPrefix(Enum):
     Mr = "Mr."
     Mrs = "Mrs."
     Miss = "Miss."
-    Master = "Master."
+    Master = "Master"
 
 
 class Person(BaseModel):
@@ -41,6 +41,7 @@ class Person(BaseModel):
     birthdate: date
     citizen_id: str
     contact: List[Contact] = []
+
     class Config:
         orm_mode = True
 
@@ -57,6 +58,6 @@ class QueryPerson(BaseModel):
     birthdate: date
     citizen_id: str
     contact: List[QueryContact] = []
+
     class Config:
         orm_mode = True
-
