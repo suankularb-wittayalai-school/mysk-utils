@@ -24,7 +24,7 @@ type Teacher {
     id: ID!
     people: Person!
     teacher_id: String!
-    subjectGroup: SubjectGroup!
+    subject_group: SubjectGroup!
 }
 
 type Student {
