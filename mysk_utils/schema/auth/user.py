@@ -29,7 +29,7 @@ class PermissionGroup(BaseModel):
     permissions: List[Permission]
 
 
-class RoleChoice(str, Enum):
+class _RoleChoice(str, Enum):
     """
     Role choice
     """

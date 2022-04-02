@@ -6,7 +6,7 @@ from enum import Enum, IntEnum
 from .contacts import Contact, QueryContact
 
 
-class ThaiPrefix(Enum):
+class _ThaiPrefix(Enum):
     """
     Thai prefix for name
     """
@@ -17,7 +17,7 @@ class ThaiPrefix(Enum):
     Miss = "นางสาว"
 
 
-class EnglishPrefix(Enum):
+class _EnglishPrefix(Enum):
     """
     English prefix for name
     """
@@ -30,8 +30,8 @@ class EnglishPrefix(Enum):
 
 class Person(BaseModel):
     id: int
-    prefix_th: ThaiPrefix
-    prefix_en: EnglishPrefix
+    prefix_th: _ThaiPrefix
+    prefix_en: _EnglishPrefix
     first_name_th: str
     last_name_th: str
     middle_name_th: Optional[str]
@@ -47,8 +47,8 @@ class Person(BaseModel):
 
 
 class QueryPerson(BaseModel):
-    prefix_th: ThaiPrefix
-    prefix_en: EnglishPrefix
+    prefix_th: _ThaiPrefix
+    prefix_en: _EnglishPrefix
     first_name_th: str
     last_name_th: str
     middle_name_th: Optional[str]
@@ -59,5 +59,5 @@ class QueryPerson(BaseModel):
     citizen_id: str
     contact: List[QueryContact] = []
 
-    class Config:
-        orm_mode = True
+    # class Config:
+    #     orm_mode = True
