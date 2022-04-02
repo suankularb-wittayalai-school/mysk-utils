@@ -5,7 +5,7 @@ from enum import Enum
 from ..student_teacher.person import Person
 
 
-class ATKMethodEnum(str, Enum):
+class _ATKMethodEnum(str, Enum):
     oral = "oral"
     rt = "rtpcr"
     nasal = "nasal"
@@ -17,6 +17,6 @@ class AtkRecord(BaseModel):
     tester: Person
     result: bool
     date: str
-    method: ATKMethodEnum
+    method: _ATKMethodEnum
     place: str
     evidence: str

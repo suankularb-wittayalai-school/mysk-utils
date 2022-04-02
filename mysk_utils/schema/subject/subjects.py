@@ -6,7 +6,7 @@ from ..student_teacher.teacher import Teacher
 from ..subject.subject_group import SubjectGroup
 
 
-class SubjectTypesTH(str, Enum):
+class _SubjectTypesTH(str, Enum):
     """
     SubjectTypes
     """
@@ -17,7 +17,7 @@ class SubjectTypesTH(str, Enum):
     development = "กิจกรรมพัฒนาผู้เรียน"
 
 
-class SubjectTypesEN(str, Enum):
+class _SubjectTypesEN(str, Enum):
     """
     SubjectTypes
     """
@@ -34,8 +34,8 @@ class Subject(BaseModel):
     name_en: str
     code_th: str
     code_en: str
-    type_th: SubjectTypesTH  # รายวิชาเพิ่มเติม | รายวิชาพื้นฐาน | กิจกรรมพัฒนาผู้เรียน | วิชาเลือก
-    type_en: SubjectTypesEN
+    type_th: _SubjectTypesTH  # รายวิชาเพิ่มเติม | รายวิชาพื้นฐาน | กิจกรรมพัฒนาผู้เรียน | วิชาเลือก
+    type_en: _SubjectTypesEN
     credit: float
     # this include every teacher who teach this subject
     teacher: List[Teacher]

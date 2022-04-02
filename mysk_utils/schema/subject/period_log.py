@@ -7,7 +7,7 @@ from enum import Enum
 from .room_subject import RoomSubject
 
 
-class TeachingMedium(Enum):
+class _TeachingMedium(Enum):
     meet = "meet"
     tape = "pre-record"
     material = "material"
@@ -19,7 +19,7 @@ class PeriodLog(BaseModel):
     id: int
     date: date
     topic: str
-    medium: List[TeachingMedium]
+    medium: List[_TeachingMedium]
     participation_level: int
     room_subject: RoomSubject
 
