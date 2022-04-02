@@ -15,5 +15,6 @@ from .student_teacher.contacts import Contact, ContactType
 from .subject.subjects import Subject, SubjectTypesEN, SubjectTypesTH
 from .subject.subject_group import SubjectGroup
 from .subject.room_subject import RoomSubject
+from .subject.period_log import PeriodLog
 
 from .vaccine.vaccine import Vaccine, VaccineProvider
