@@ -1,9 +1,10 @@
 from .atk.atk import AtkRecord
 
 from .auth.user import User
-from .auth.query import QueryUser, QueryLogin, QueryUserTeacher, QueryLogin
+from .auth.query import QueryUser, QueryLogin, QueryUserTeacher
 
 from .classroom.classroom import Classroom
+from .classroom.query import QueryClassroom
 
 from .schedule.schedule import Schedule, ScheduleRow
 from .schedule.scheduleItem import ScheduleItem
