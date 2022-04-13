@@ -31,5 +31,5 @@ class QueryContact(BaseModel):
     type: _ContactType
     value: str
 
-    class Config:
-        orm_mode = True
+    # class Config:
+    #     orm_mode = True
