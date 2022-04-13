@@ -1,5 +1,5 @@
-from ..student_teacher.student import Student
-from ..student_teacher.teacher import Teacher
+from ..people.student import Student
+from ..people.teacher import Teacher
 
 
 from pydantic import BaseModel

@@ -9,10 +9,10 @@ from .classroom.query import QueryClassroom
 from .schedule.schedule import Schedule, ScheduleRow
 from .schedule.scheduleItem import ScheduleItem
 
-from .student_teacher.person import Person, QueryPerson
-from .student_teacher.student import Student, QueryStudent
-from .student_teacher.teacher import Teacher
-from .student_teacher.contacts import Contact, QueryContact
+from .people.person import Person, QueryPerson
+from .people.student import Student, QueryStudent
+from .people.teacher import Teacher
+from .people.contacts import Contact, QueryContact
 
 from .subject.subjects import Subject
 from .subject.subject_group import SubjectGroup

@@ -2,7 +2,7 @@ from enum import Enum
 from pydantic import BaseModel
 from typing import List, Optional
 
-from ..student_teacher.teacher import Teacher
+from ..people.teacher import Teacher
 from ..subject.subjects import Subject
 
 

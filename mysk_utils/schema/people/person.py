@@ -42,8 +42,8 @@ class Person(BaseModel):
     citizen_id: str
     contact: List[Contact] = []
 
-    class Config:
-        orm_mode = True
+    # class Config:
+    #     orm_mode = True
 
 
 class QueryPerson(BaseModel):

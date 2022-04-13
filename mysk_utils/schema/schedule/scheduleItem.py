@@ -3,7 +3,7 @@ from pydantic import BaseModel
 from typing import List, Optional
 
 from ..subject.subjects import Subject
-from ..student_teacher.teacher import Teacher
+from ..people.teacher import Teacher
 
 
 class ScheduleItem(BaseModel):

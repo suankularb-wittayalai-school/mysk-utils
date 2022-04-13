@@ -1,7 +1,7 @@
 from pydantic import BaseModel
 from typing import List, Optional
 
-from ..student_teacher.person import Person, QueryPerson, _EnglishPrefix, _ThaiPrefix
+from ..people.person import Person, QueryPerson, _EnglishPrefix, _ThaiPrefix
 from ..subject.subject_group import SubjectGroup
 
 
