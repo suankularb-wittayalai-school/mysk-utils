@@ -14,7 +14,7 @@ setup(
         "mysk_utils.schema.auth",
         "mysk_utils.schema.classroom",
         "mysk_utils.schema.schedule",
-        "mysk_utils.schema.student_teacher",
+        "mysk_utils.schema.people",
         "mysk_utils.schema.subject",
         "mysk_utils.schema.vaccine",
     ],
