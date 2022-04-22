@@ -1,7 +1,7 @@
 from pydantic import BaseModel
 from typing import List, Optional
-from datetime import datetime, date
-from enum import Enum, IntEnum
+from datetime import date
+from enum import Enum
 
 from .contacts import Contact, QueryContact
 

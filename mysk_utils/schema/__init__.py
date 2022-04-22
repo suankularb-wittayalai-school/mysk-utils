@@ -11,7 +11,7 @@ from .schedule.scheduleItem import ScheduleItem
 
 from .people.person import Person, QueryPerson
 from .people.student import Student, QueryStudent
-from .people.teacher import Teacher
+from .people.teacher import Teacher, QueryTeacher
 from .people.contacts import Contact, QueryContact
 
 from .subject.subjects import Subject
