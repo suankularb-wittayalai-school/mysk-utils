@@ -1,3 +1,4 @@
+from optparse import Option
 from pydantic import BaseModel
 from typing import List, Optional
 
@@ -5,15 +6,14 @@ from ..people.person import Person, QueryPerson, _EnglishPrefix, _ThaiPrefix
 from ..subject.subject_group import SubjectGroup
 
 
-class Teacher(BaseModel):
+class Teacher(Person):
     """
     Teacher model
     """
 
     id: str
-    people: Person
     teacher_id: str
-    subject_groups: List[SubjectGroup]
+    subject_groups: Optional[List[SubjectGroup]] = None
 
 
 class QueryTeacher(QueryPerson):
